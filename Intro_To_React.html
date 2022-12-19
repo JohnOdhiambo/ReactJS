@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning React JS</title>   
+  </head>
+
+  <body>
+    <div class="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      //Get the root Element from the Html Document
+      const rootElement = document.querySelector('.root')
+
+      // style
+      const headerStyles = {
+        backgroundColor: '#61DBFB',
+        fontFamily: 'Helvetica Neue',
+        padding: 25,
+        lineHeight: 1.5
+      }
+      //JSX Element with HTML Elements
+      const header = (
+	      <header style= {headerStyles}>
+	      	<h1>Welcome Jay</h1>
+	      	<h1> This is a JSX Element</h1>
+	      	<small>13th December 2022</small>
+	      </header>
+	  )
+	  //JSX Element, main
+	  const mainStyles = { backgroundColor: '#F3F0F5',}
+	  const main = (
+	  	<main style = {mainStyles}>
+	  		<p>What is needed to start coding  
+	  		<strong><em>react.js</em>
+              </strong>
+            </p>
+	  		<ul>
+	  			<li>HTML</li>
+	  			<li>CSS & JavaScript</li>
+	  		</ul>
+	  	</main>
+	  )
+	  //JSX Element, footer
+	  const footer = (
+	  	//Inline styling
+	  	<footer style = {{backgroundColor: '#61DBFB'}}>
+	  		<p>Copyright 2022</p>
+	  	</footer>
+	  )
+	  //JSX Element, app,container or parent
+	  const app = (
+	  	<div>
+	  		{header}
+	  		{main}
+	  		{footer}
+	  	</div>
+	  )
+      // Render the JSX element using the ReactDOM package
+      // ReactDOM has the render method & the render method takes two arguments
+      
+      //For rendering one element
+      //ReactDOM.render(header, rootElement)
+      ReactDOM.render(app, rootElement)
+      //or ReactDOM.render([headre, main, footer], rootElement)
+      
+    </script>
+  </body>
+</html>
