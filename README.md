@@ -6,7 +6,7 @@ JSX stands for JavaScript XML. JSX allows us to write HTML elements with JavaScr
 It makes it easier to write and add HTML elements in React. JSX will be converted to JavaScript on browser using a transpiler - babel.js.
 Babel is a library which transpiles JSX to pure JavaScript and latest JavaScript to older version.
 
-This JSX element has 3 HTML element which is h1.
+For example, this JSX element has 3 HTML element which is h1.
 	const header = (
   	  <header>
     	    <h1>Welcome to 30 Days Of React</h1>
