@@ -9,8 +9,7 @@ Babel is a library which transpiles JSX to pure JavaScript and latest JavaScript
 For example, this JSX element has 3 HTML element which is h1.
 	const header = (
   	  <header>
-    	    <h1>Welcome to 30 Days Of React</h1>
-     	    <h2>Getting Started React</h2>
+    	    <h1>Welcome to React JS</h1>
     	    <small>JavaScript Library</small>
   	  </header>
 	)
