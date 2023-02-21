@@ -18,6 +18,18 @@ console.log(myMap.get(keyString));
 console.log(myMap.get(keyObject));
 console.log(myMap.get(keyFunc));
 
+//Map is a collection of keyed data items, just like an Object. But the main difference is that Map allows keys of any type.
+let map = new Map();
+
+map.set('1', 'str1');   // a string key
+map.set(1, 'num1');     // a numeric key
+map.set(true, 'bool1'); // a boolean key
+
+// remember the regular Object? it would convert keys to string
+// Map keeps the type, so these two are different:
+console.log( map.get(1)   ); // 'num1'
+console.log( map.get('1') ); // 'str1'
+
 //WEAKMAP Datastructure
 //It is a map in which the keys are weakly referenced
 //In contrast to Maps, every key must be an object
