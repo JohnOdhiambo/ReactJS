@@ -1,6 +1,6 @@
 //using Ternary Operator
 //Ternary operator can be used inside styles, className/ many places in a component than regular if else statement.
-//a condition followed by a question mark (?), 
+//The syntax is a condition followed by a question mark (?), 
 //then an expression to execute if the condition is truthy followed by a colon (:), 
 //and finally the expression to execute if the condition is falsy.
 import React from 'react'
